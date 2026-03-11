@@ -15,6 +15,17 @@ The deployment includes basic Kubernetes components such as:
 
 ---
 
+Cluster provisioning
+
+The cluster is created using Kind (Kubernetes in Docker).
+The configuration is defined in kind-cluster.yaml.
+
+Application deployment
+
+The application is deployed using Kubernetes manifests located in the k8s/ directory.
+
+kubectl apply -f k8s/
+
 ## Architecture
 
 Browser
